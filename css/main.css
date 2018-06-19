@@ -240,6 +240,7 @@ header .download span:hover
     color: #737373;
     letter-spacing: 2px;
     font-size: 13px;
+    text-transform: uppercase;
 }
 
 .Wwdo h4
