@@ -1,8 +1,310 @@
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix */
+/**
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    contenteditable attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that are clearfixed.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+ 
+.cf:after {
+    clear: both;
+}
+ 
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.cf {
+    *zoom: 1;
+}
+
+body
+{
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* The loader screen */
+.loading-overlay
+{
+    background: #FFF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+.loading-overlay img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
 /* start header section */
+
+header
+{
+    background-color: #333B3F;
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 80px;
+    height: 100vh;
+}
+
+header .brand
+{
+    text-align: center;
+    color: #FFF;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 700;    
+}
+
+header .brand span
+{
+    color: #F35F55;
+}
+
+.navbar
+{
+    margin-top: 50px;
+}
+
+.navbar ul
+{
+    list-style: none;
+    text-align: center
+}
+
+.navbar ul li
+{   
+    text-align: center;
+    display: inline-block;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    color: #FFF;
+    padding: 7px 18px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar ul .dropdown
+{
+    position: relative;
+    padding: 30px 0;
+}
+
+.navbar ul .dropdown ul span
+{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: auto;
+    position: relative;
+    top: -11px;
+}
+
+.navbar ul li .sub-ul
+{
+    display: none;
+    position: absolute;
+    left: -15px;
+    top: 50px;
+    border: 1px solid #FFF;
+    padding: 3px 5px 17px 5px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 1px 8px 14px rgba(0, 0, 0, .6);
+}
+
+.navbar ul li .sub-ul .sub-li a
+{
+    color: #888;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: .3s all;
+}
+
+.navbar ul li .sub-ul .sub-li a:hover
+{
+    color: #222;
+}
+
+header h4
+{
+    color: #FFF;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding-left: 68px;
+}
+
+header .download
+{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .download button
+{
+    background: #0A85CB;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 18px 28px;
+    cursor: pointer;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    transition: .3s all;
+}
+
+header .download button:hover
+{
+    background: #006dab;
+    -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+header .download button:focus
+{
+    outline: none;
+}
+
+header .download span
+{
+    color:#6d6d6d;
+    cursor: pointer;
+    margin-left: 8px;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    transition: .3s all;
+}
+
+header .download span:hover
+{
+    color: #fff
+}
+
 
 /* end header section */
 
 /* start What We Do section */
+
+.Wwdo
+{
+    background: #F2F2F2;
+    text-align: center;
+    padding: 60px 0 80px;
+}
+
+.Wwdo span
+{
+    color: #737373;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.Wwdo h4
+{
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin: 30px 0 40px;
+    color: #2f2f2f;
+}
+
+.Wwdo .Fparagraphsection
+{
+    color: #737373;
+    letter-spacing: 2px;
+    line-height: 20px;
+    width: 755px;
+    margin: auto;
+}
+
+.Wwdo .container
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.Wwdo .container .row
+{
+    width: 33.3333%;
+    float: left;
+    padding: 20px;
+    margin: 60px 0 0 0;
+}
+
+.Wwdo .container .row .fa
+{
+    color: #b7b7b7;
+}
+
+.Wwdo .container .row h5
+{
+    font-size: 20px;
+    margin: 15px 0 25px 0;
+    color: #6f6f6f;
+    font-weight: lighter;
+}
+
+.Wwdo .container .row p
+{
+    color: #737373;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.Wwdo .container .row a
+{
+    color: #07c0ea;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
 
 /* end What We Do section */
 
